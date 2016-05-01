@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text input boxes</title>
+
+<style>
+body {
+  font-family: monospace;
+}
+</style>
+</head>
+<body>
+<h1>What's Next?</h1>
+
+<ol>
+  <li>O, T, T, F, F <input id="answer1" maxlength = "1">
+  <li>M, T, W, T, F <input id="answer2" maxlength = "1">
+  <li>J, F, M, A, M <input id="answer3" maxlength = "1">
+  <li>T, N, E, S, S <input id="answer4" maxlength = "1">
+  <li>M, V, E, M, J <input id="answer5" maxlength = "1">
+  <li>R, O, Y, G, B <input id="answer6" maxlength = "1">
+</ol>
+
+<button id="checkButton">Check Answers</button>
+
+<script>
+function checkAnswers() {
+  var score = 0;
+  
+  if (answer1.value.toUpperCase() == 'S') {
+    answer1.style.backgroundColor = 'lightGreen';
+    score++;
+  } else {
+    answer1.style.backgroundColor = 'pink';
+  }
+  
+  if (answer2.value.toUpperCase() == 'S') {
+    answer2.style.backgroundColor = 'lightGreen';
+    score++
+  } else {
+    answer2.style.backgroundColor = 'pink';
+  }
+  
+  if (answer3.value.toUpperCase() == 'J') {
+    answer3.style.backgroundColor = 'lightGreen';
+    score++
+  } else {
+    answer3.style.backgroundColor = 'pink';
+  }
+  
+  if (answer4.value.toUpperCase() == 'F') {
+    answer4.style.backgroundColor = 'lightGreen';
+    score++
+  } else {
+    answer4.style.backgroundColor = 'pink';
+  }
+  
+  if (answer5.value.toUpperCase() == 'S') {
+    answer5.style.backgroundColor = 'lightGreen';
+    score++
+  } else {
+    answer5.style.backgroundColor = 'pink';
+  }
+  
+  if (answer6.value.toUpperCase() == 'I') {
+    answer6.style.backgroundColor = 'lightGreen';
+    score++
+  } else {
+    answer6.style.backgroundColor = 'pink';
+  }
+  
+  alert('You scored: ' + score);
+}
+
+checkButton.onclick = checkAnswers;
+</script>
+</body>
+</html>
